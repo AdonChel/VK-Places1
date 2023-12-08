@@ -1,0 +1,97 @@
+.div-screen {
+    background-image: url('../img/Онбординг.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.div-screen1 {
+    background-image: url('../img/window1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.window1 {
+    background-image: url('../img/Logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vh;
+    height: 30vh;
+}
+
+.div-screen2 {
+    background-image: url('../img/window2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.div-screen3 {
+    background-image: url('../img/window2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.div-screen4 {
+    background-image: url('../img/window2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.window2 {
+    background-image: url('../img/chel.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    width: 30vh;
+    height: 30vh;
+}
+
+.icon1 {
+    top: 11vh;
+    right: 1vh;
+    position: fixed;
+}
+
+.icon2 {
+    top: 11vh;
+    right: 7vh;
+    position: fixed;
+}
+
+.icon3 {
+    top: 72vh;
+    right: 21vh;
+    position: fixed;
+}
+
+.icon4 {
+    top: 64vh;
+    right: 22vh;
+    position: fixed;
+}
+
+
+
+.white {
+    background-image: url('../img/WhiteBack.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36vh;
+    height: 49vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+

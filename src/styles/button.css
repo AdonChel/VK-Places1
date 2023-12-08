@@ -1,0 +1,57 @@
+.text {
+    color: #0077FF;
+}
+
+.text1 {
+    color: #0077FF;
+}
+
+.text2 {
+    color: #FFFFFF;
+}
+
+.button {
+    text-align: center;
+    font-size: 30px;
+    height: 6vh;
+    width: 40vw;
+    display: block !important;
+    font-weight: 600 !important;
+}
+
+.button1 {
+    text-align: center;
+    font-size: 30px;
+    height: 6vh;
+    width: 40vw;
+    display: block !important;
+    color: #0077FF !important;
+    font-weight: 600 !important;
+    
+}
+
+.button2 {
+    text-align: center;
+    font-size: 30px;
+    height: 6vh;
+    width: 40vw;
+    display: block !important;
+    color: #0077FF !important;
+    font-weight: 600 !important;
+    top: 1vw;
+}
+
+.checkBox {
+    margin: 5px;
+    width: 70vw;
+    background-color: #82A5FE;
+    border-radius: 13px;
+}
+
+.checkBox1 {
+    margin: 5px;
+    width: 70vw;
+    background-color: #ffffff;
+    border-radius: 13px;
+}
+
