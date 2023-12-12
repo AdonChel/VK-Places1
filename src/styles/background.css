@@ -40,6 +40,13 @@
     position: relative;
 }
 
+.div-screen5 {
+    background-image: url('../img/map.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .window2 {
     background-image: url('../img/chel.svg');
     background-repeat: no-repeat;
@@ -47,6 +54,16 @@
     z-index: 1;
     width: 30vh;
     height: 30vh;
+}
+
+.window3 {
+    background-image: url('../img/level.svg');
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 12vh;
+    height: 5vh;
+    margin-left: 25px;
+    margin-top: 2vh;
 }
 
 .icon1 {
@@ -73,8 +90,6 @@
     position: fixed;
 }
 
-
-
 .white {
     background-image: url('../img/WhiteBack.svg');
     background-repeat: no-repeat;
@@ -88,6 +103,52 @@
     align-items: center;
 }
 
+.white2 {
+    background-image: url('../img/white2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 48vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 113px;
+}
+
+.white3 {
+    background-image: url('../img/white2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42vh;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 48px;
+    left: -2px;
+    border-radius: 30px;
+}
+
+.white4 {
+    background-image: url('../img/white2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -79px;
+    left: -2px;
+    border-radius: 30px;
+}
+
 .div-container {
     display: flex;
     flex-direction: column;
@@ -95,3 +156,10 @@
     align-items: center;
 } 
 
+.search {
+    display: flex;
+    width: 40vh;
+    border-radius: 95px;
+    background-color: #ffffff00;
+    margin-top: -61vh;
+}

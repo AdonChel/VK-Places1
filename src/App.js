@@ -9,6 +9,10 @@ import {Icon16CancelCircleOutline} from '@vkontakte/icons'
 import {Icon16MoreHorizontal} from '@vkontakte/icons'
 import {Icon28MoreHorizontal} from '@vkontakte/icons'
 import {Icon56CheckCircleOutline} from '@vkontakte/icons'
+import {Icon28AchievementCircleFillBlue} from '@vkontakte/icons'
+import {Icon28UserSquareOutline} from '@vkontakte/icons'
+import {Icon28LocationMapOutline} from '@vkontakte/icons'
+import {Icon28LogoVk} from '@vkontakte/icons'
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('start-screen');
@@ -38,6 +42,12 @@ const App = () => {
 		backgroundColor: '#F7F4F2',
 	  };
 
+	  const rowStyles = {
+		display: 'flex',
+		justifyContent: 'center',
+		gap: 16,
+		padding: 16,
+	  };
 
 	return (
 		<ConfigProvider>
@@ -81,6 +91,26 @@ const App = () => {
 								<Panel id='start-2'>
 									<Group separator='hide'>
 										<div style={containerStyles} className='div-screen2'>
+											<div className='div-container'>
+												<div className='white2'>
+													<Title className='text3' style={{fontSize: '21px', width: '37vh', marginLeft: '15px', marginBottom: '220px'}}>Разрешить приложению VK Места доступ к данным о местоположении устройства?</Title>
+												</div> 	
+												<Button className='button3' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-3')}>
+													Разрешить
+													</Button>
+													<Button className='button3' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-3')}>
+													Отклонить
+													</Button>
+													<Button className='button3' size='l' appearance='accent' sizeY='regular' style={{fontSize:'15px'}} onClick={() => setActivePanel('start-3')}>
+													Запретить и не спрашивать
+													</Button>																									
+											</div>
+										</div>
+									</Group>
+								</Panel>
+								<Panel id='start-3'>
+									<Group separator='hide'>
+										<div style={containerStyles} className='div-screen2'>
 											<div className='div-container'>	
 												<div className='white'>
 													<Title className='text1' style={{fontSize:'23px'}}>Ваш город:</Title>
@@ -94,12 +124,12 @@ const App = () => {
 												<Title style={{color:'#FFFFFF'}}>Шаг 1</Title>
 												<Icon28MoreHorizontal className='icon3'></Icon28MoreHorizontal>
 												<Spacing size={60}></Spacing>
-												<Button className='button1' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-3')}>Далее</Button>
+												<Button className='button1' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-4')}>Далее</Button>
 											</div>
 										</div>
 									</Group>
 								</Panel>
-								<Panel id='start-3'>
+								<Panel id='start-4'>
 									<Group separator='hide'>
 										<div style={containerStyles} className='div-screen3'>
 											<div className='div-container'>
@@ -122,11 +152,11 @@ const App = () => {
 											<Title style={{color:'#FFFFFF'}}>Шаг 2: выбор интересов</Title>
 											<Icon28MoreHorizontal className='icon4'></Icon28MoreHorizontal>
 											<Spacing size={60}></Spacing>
-											<Button className='button1' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-4')}>Далее</Button>
+											<Button className='button1' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-5')}>Далее</Button>
 										</div>
 									</Group>
 								</Panel>
-								<Panel id='start-4'>
+								<Panel id='start-5'>
 									<Group separator='hide'>
 										<div style={containerStyles} className='div-screen4'>
 											<div className='div-container'>
@@ -135,7 +165,84 @@ const App = () => {
 											<Spacing size={105}></Spacing>
 											<Title style={{color:'#FFFFFF'}}>Шаг 3: пользуйтесь!</Title>
 											<Icon28MoreHorizontal className='icon5'></Icon28MoreHorizontal>
-											<Button className='button2' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-4')}>Готово</Button>
+											<Button className='button2' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-6')}>Готово</Button>
+										</div>	
+									</Group>
+								</Panel>
+								<Panel id='start-6'>
+									<Group separator='hide'>
+										<div style={containerStyles} className='div-screen5'>
+											<div className='div-container'>
+												<Search value={Search} className='search'>
+												
+												</Search>
+											</div>			
+											<Tabbar>
+												<TabbarItem text='Профиль'>
+													<Icon28UserSquareOutline/>
+												</TabbarItem>
+												<TabbarItem text='Места'>
+													<Icon28LogoVk />
+												</TabbarItem>
+												<TabbarItem text='Рекомендации'>
+													<Icon28LocationMapOutline />
+												</TabbarItem>
+											</Tabbar>
+										</div>
+									</Group>
+								</Panel>
+								<Panel id='start-7'>
+									<Group separator='hide'>
+										<div style={containerStyles} className='div-screen2'>
+											<div className='div_container'>
+											<Spacing size={50}></Spacing>
+												<div className='white3'>
+													<div style={rowStyles}>
+														<div>
+															<IconButton>
+																<Icon28AchievementCircleFillBlue className='icon5' onClick={() => setActivePanel('start-7')} style={{height: '172px', width: '96px', marginTop: '-66px', marginLeft: '0vh'}}/>
+															</IconButton>	
+														</div>					
+													</div>		
+													<Title className='text4' style={{height: '12px', margin: '10px'}}>Начинающий</Title>									
+												<div className='window3'>
+
+												</div>
+												<Spacing size={10}></Spacing>
+												<Icon28AchievementCircleFillBlue className='icon5' style={{height: '172px', width: '96px', marginTop: '-4vh', marginLeft: '0vh'}}></Icon28AchievementCircleFillBlue>
+												<Title className='text4' style={{height: '12px', marginTop: '-4vh'}}>Продвинутый</Title>
+												<div className='window3'>
+
+												</div>
+												<Spacing size={10}></Spacing>
+												<Icon28AchievementCircleFillBlue className='icon5' style={{height: '172px', width: '96px', marginTop: '-6vh', marginLeft: '0vh'}}></Icon28AchievementCircleFillBlue>
+												<Title className='text4' style={{height: '12px', margin: '1px'}}>Профи</Title>
+												<div className='window3'>
+
+												</div>
+												</div>	
+											</div>
+											<Spacing size={150}></Spacing>
+											<Button className='button2' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel}>Назад</Button>
+										</div>
+									</Group>
+								</Panel>
+								<Panel id='start-8'>
+									<Group separator='hide'>
+										<div style={containerStyles} className='div-screen2'>
+										<Title className='text6' style={{marginBlock: '13vh'}}>Начинающий</Title>
+											<div className='white4'>
+												<Title className='text5' style={{textAlign: 'center'}}>посетить 5 ресторанов и оставить на них отзыв</Title>
+												<Spacing size={20}></Spacing>
+												<Title className='text5' style={{textAlign: 'center'}}>принять участие в ивенте</Title>
+												<Spacing size={20}></Spacing>
+												<Title className='text5' style={{textAlign: 'center'}}>заходить в приложение 3 дня подряд</Title>
+												<Spacing size={20}></Spacing>
+												<Title className='text5' style={{textAlign: 'center'}}>выложить сторис с отметкой кафе</Title>
+												<Spacing size={20}></Spacing>
+												<Title className='text5' style={{textAlign: 'center'}}>сфотографировать свой заказ и выложить</Title>
+											</div>
+											<Button className='button2' size='l' appearance='accent' sizeY='regular' style={{fontSize:'22px'}} onClick={() => setActivePanel('start-7')}>Назад</Button>
 										</div>	
 									</Group>
 								</Panel>

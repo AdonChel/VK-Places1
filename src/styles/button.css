@@ -10,6 +10,28 @@
     color: #FFFFFF;
 }
 
+.text3 {
+    color: #FFFFFF;
+}
+
+.text4 {
+    color: black;
+    font-size: 15px;
+}
+
+.text5 {
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.text6 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
 .button {
     text-align: center;
     font-size: 30px;
@@ -38,7 +60,17 @@
     display: block !important;
     color: #0077FF !important;
     font-weight: 600 !important;
-    top: 1vw;
+    top: -4vw;
+}
+
+.button3 {
+    text-align: center;
+    height: 6vh;
+    width: 78vw;
+    display: block !important;
+    color: #0077FF !important;
+    top: -33vw;
+    margin: 4px;
 }
 
 .checkBox {
@@ -55,3 +87,6 @@
     border-radius: 13px;
 }
 
+.tabbar {
+    border-radius: 17px;
+}
