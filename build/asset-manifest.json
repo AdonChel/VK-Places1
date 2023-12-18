@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.bdee6784.css",
-    "main.js": "/static/js/main.f19a9193.js",
+    "main.css": "/static/css/main.770d4aa3.css",
+    "main.js": "/static/js/main.7ecdf547.js",
     "static/media/chel.svg": "/static/media/chel.17b62dc0811890de2104.svg",
+    "static/media/map.svg": "/static/media/map.0e46658819ae99ce51d7.svg",
     "static/media/Онбординг.svg": "/static/media/Онбординг.d62e9766fa757a4d53cd.svg",
     "static/media/window1.svg": "/static/media/window1.524ef1c112d8b681ab99.svg",
     "static/media/window2.svg": "/static/media/window2.ad95f12067a56c54218c.svg",
     "static/media/Logo.svg": "/static/media/Logo.1a6cda750ddf05be4f31.svg",
+    "static/media/white2.svg": "/static/media/white2.f17f925e786742297625.svg",
     "static/media/WhiteBack.svg": "/static/media/WhiteBack.91d7194e6a0c1ea78d85.svg",
     "index.html": "/index.html",
-    "main.bdee6784.css.map": "/static/css/main.bdee6784.css.map",
-    "main.f19a9193.js.map": "/static/js/main.f19a9193.js.map"
+    "static/media/level.svg": "/static/media/level.6bbe0b26fb10a2023182.svg",
+    "main.770d4aa3.css.map": "/static/css/main.770d4aa3.css.map",
+    "main.7ecdf547.js.map": "/static/js/main.7ecdf547.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdee6784.css",
-    "static/js/main.f19a9193.js"
+    "static/css/main.770d4aa3.css",
+    "static/js/main.7ecdf547.js"
   ]
 }
